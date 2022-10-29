@@ -1,0 +1,40 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+}
+
+
+/* -------主题页------ */
+
+.page{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/1f54c5ab85845cd6c2e29ee5a109605a.jpeg);
+    position: absolute;
+    top: 10px;
+    z-index: 0;
+}
+
+/* ---------头部导航栏------------ */
+.head_navigation{
+    height: 50px;
+    background-color: rgb(185, 68, 68);
+    z-index: 1;
+}
+
+.head_navigation a{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.748);
+    position: relative;;
+    top: 10px;
+    left: 50px;
+}
+
+.head_navigation div{
+    display: inline;
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.748);
+    font-size: 16px;
+}
