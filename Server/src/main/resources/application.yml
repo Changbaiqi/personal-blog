@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: cbq-blogs
+mybatis:
+  mapper-locations: classpath:mapper/*
