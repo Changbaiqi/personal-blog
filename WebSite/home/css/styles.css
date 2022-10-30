@@ -36,6 +36,17 @@ body{
     position: absolute;
     top: 0px;
     z-index: -1;
+    filter: blur(0px);
+    animation: page_loading 2s;
+}
+
+@keyframes page_loading {
+    0%{
+        filter: blur(3px);
+    }
+    100%{
+        filter: blur(0px);
+    }
 }
 
 .page #next{
@@ -115,17 +126,27 @@ body{
     font-size: 16px;
 }
 
-
 .main{
-    height: 100vh;
-    min-width: 200px;
-    max-width: 50%;
-    background-color: rgb(21, 20, 20);
+    height: auto;
+    width: 100%;
     margin-top: 100vh;
-    margin-right: 1px;
     position: relative;
-    left: 500px;
-    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.content{
+    height: 100vh;
+    width: 47%;
+    min-width: 200px;
+    max-width: 80%;
+    background-color: rgb(21, 20, 20);
+    margin-right: 1px;
+    position: absolute;
+    top: 30px;
+    left: 60%;
+    transform: translate(-50%);
+
+    border-radius: 10px;
 }
 
 @media screen and (max-width:400px)  {
@@ -138,5 +159,118 @@ body{
 
 /* ------用户信息导航栏------ */
 .left_user_navigation{
-    
+    height: 500px;
+    width: 16.5%;
+    background-color: rgb(21, 20, 20);
+    margin-top: 30px;
+    border-radius: 10px;
+    position:absolute;
+    left: 19%;
+    text-align: center;
+}
+
+.left_user_navigation #head_img{
+    height: 100px;
+    width: 100px;
+    content: url(../images/QQ头像.jpg);
+    border-radius: 100%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.left_user_navigation #user_name{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    /* background-color: aliceblue; */
+    position: absolute;
+    top: 33%;
+    left: 0%;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.left_user_navigation #describe{
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 文章标签 */
+.left_user_navigation .user_label #label_paper{
+    height: 200px;
+    width: 30%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    display: inline-block;
+    text-align: center;
+}
+
+.left_user_navigation .user_label #label_paper #title{
+    font-size: 16px;
+}
+
+.left_user_navigation .user_label #label_paper #value{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 6px;
+}
+
+
+/* 标签标签 */
+.left_user_navigation .user_label #label_label{
+    height: 200px;
+    width: 30%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+}
+
+.left_user_navigation .user_label #label_label #title{
+    font-size: 16px;
+}
+
+.left_user_navigation .user_label #label_label #value{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 6px;
+}
+
+/* 分类标签 */
+.left_user_navigation .user_label #label_class{
+    height: 200px;
+    width: 30%;
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    display: inline-block;
+    text-align: center;
+}
+
+.left_user_navigation .user_label #label_class #title{
+    font-size: 16px;
+}
+
+.left_user_navigation .user_label #label_class #value{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 6px;
 }
