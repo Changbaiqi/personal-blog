@@ -93,6 +93,13 @@ export default {
     top: 10%;
     left: 50%;
     transform: translate(-50%,0);
+    box-shadow: 0 1px 5px 1px rgb(144, 144, 144);
+    transition-duration: 1s;
+}
+
+#left_user_navigation #head_img:hover{
+    box-shadow: 7px 7px 7px 1px rgb(144, 144, 144);
+    transition-duration: 1s;
 }
 
 #left_user_navigation #user_name{
@@ -103,8 +110,9 @@ export default {
     position: absolute;
     top: 33%;
     left: 0%;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
+    font-family: hyhg;
 }
 
 #left_user_navigation #describe{
@@ -112,10 +120,11 @@ export default {
     color: aliceblue;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 0%;
-    font-size: 15px;
+    font-size: 19px;
     font-family: 'Courier New', Courier, monospace;
+    font-family: hyhg;
 }
 
 /* 文章标签 */
@@ -124,14 +133,16 @@ export default {
     width: 30%;
     color: aliceblue;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 5%;
     display: inline-block;
     text-align: center;
+    font-family: hyhg;
 }
 
 #left_user_navigation .user_label #label_paper #title{
     font-size: 16px;
+    font-family: hyhg;
 }
 
 #left_user_navigation .user_label #label_paper #value{
@@ -139,6 +150,7 @@ export default {
     text-align: center;
     font-size: 25px;
     margin-top: 6px;
+    font-family: hyhg;
 }
 
 
@@ -148,16 +160,18 @@ export default {
     width: 30%;
     color: aliceblue;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,0);
     display: inline-block;
     text-align: center;
     font-size: 15px;
+    font-family: hyhg;
 }
 
 #left_user_navigation .user_label #label_label #title{
     font-size: 16px;
+    font-family: hyhg;
 }
 
 #left_user_navigation .user_label #label_label #value{
@@ -165,6 +179,7 @@ export default {
     text-align: center;
     font-size: 25px;
     margin-top: 6px;
+    font-family: hyhg;
 }
 
 /* 分类标签 */
@@ -173,14 +188,16 @@ export default {
     width: 30%;
     color: aliceblue;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 65%;
     display: inline-block;
     text-align: center;
+    font-family: hyhg;
 }
 
 #left_user_navigation .user_label #label_class #title{
     font-size: 16px;
+    font-family: hyhg;
 }
 
 #left_user_navigation .user_label #label_class #value{
@@ -188,6 +205,7 @@ export default {
     text-align: center;
     font-size: 25px;
     margin-top: 6px;
+    font-family: hyhg;
 }
 
 #left_user_navigation .toQQ{
@@ -198,7 +216,7 @@ export default {
     height: 50px;
     width: 50px;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 10%;
     filter: opacity(0.3) drop-shadow(0 0 0 rgb(255, 255, 255));
 }
@@ -211,7 +229,7 @@ export default {
     height: 53px;
     width: 53px;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%,0);
     filter: opacity(0.3) drop-shadow(0 0 0 rgb(255,255,255));
@@ -225,7 +243,7 @@ export default {
     height: 55px;
     width: 55px;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 80%;
     transform: translate(-50%,0);
     filter: opacity(0.3) drop-shadow(0 0 0 rgb(255,255,255));

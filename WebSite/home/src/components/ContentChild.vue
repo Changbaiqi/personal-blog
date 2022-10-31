@@ -3,6 +3,13 @@
     <div id="contentChildImg">
         <img id="showImg">
     </div>
+    <div id="right">
+            <h2>测试标题</h2>
+            <div>发表于2022-06-09|JavaSccript</div>
+            <a id="text">
+                本系列文章旨在带给读者地道的前端基础知识体系，深入底层原理，了解最权威的前端基础，循序渐进，带领读者领略正确学习方法的独特魅力。
+            </a>
+    </div>
    </div>
 </template>
 
@@ -45,6 +52,9 @@ export default {
     border: 0;
     box-shadow: none;
     margin-bottom: 30px;
+    display: flex;
+    position: relative;
+    font-family: hyhg;
 }
 /* 首次出现的动画 */
 .loading_contentChild{
@@ -68,6 +78,8 @@ export default {
 #contentChild:hover img{
     transform: scale(1.3);
     transition-duration: 1s;
+    /* filter: blur(0px); */
+    filter: opacity(1);
 }
 
 
@@ -77,6 +89,7 @@ export default {
     height: 100%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
+    position: relative;
 }
 #showImg{
     width: 100%;
@@ -85,6 +98,45 @@ export default {
     content: url(../assets/images/89938429686470d440d6fea7fc9e7c81.jpeg);
     cursor: pointer;
     transform: all 0.6s;    
+    /* filter: blur(10px); */
+    filter: opacity(0.7);
     transition-duration: 1s;
+    
+}
+
+#contentChild #right{
+    /* background-color: aliceblue; */
+    width: 55%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#contentChild #right h2{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+#contentChild #right div{
+    position: relative;
+    top: 60px;
+    left: 50px;
+    color:rgb(149, 149, 149);
+    font-size: 17px;
+}
+
+#contentChild #right a{
+    height: 40%;
+    width: 80%;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    display: block;
+    /* overflow: auto; */
+    color: rgb(182, 182, 182);
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 3px;
 }
 </style>

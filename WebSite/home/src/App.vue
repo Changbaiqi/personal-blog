@@ -47,4 +47,8 @@ body{
     src: url(./assets/ttf/潮字社北冥简繁.ttf);
 }
 
+@font-face {
+  font-family: hyhg;
+  src: url(./assets/ttf/汉仪花冠.ttf);
+}
 </style>

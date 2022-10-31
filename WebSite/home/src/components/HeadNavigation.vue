@@ -1,6 +1,6 @@
 <template>
   <div class="head_navigation">
-    <a>长白崎的博客</a>
+    <a>长白崎の博客</a>
         <div><img><span>搜索</span></div>
         <div><img><span>留言板</span></div>
         <div><img><span>首页</span></div>
@@ -20,6 +20,7 @@ export default {
     z-index: -1;
     position: absolute;
     z-index: 2;
+    font-family: hyhg;
     /* background-color: aliceblue; */
 }
 .head_navigation a{
@@ -28,6 +29,7 @@ export default {
     position: relative;
     top: 10px;
     left: 50px;
+    font-size: 28px;
 }
 .head_navigation div{
     display: inline;

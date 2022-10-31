@@ -60,7 +60,7 @@ export default {
     left: 50%;
     display: inline-block;
     transform: translate(-50%,-50%);
-    font-size: 50px;
+    font-size: 60px;
     color: rgba(239, 240, 242, 0.878);
     text-shadow: 1px 5px 5px #000;
     font-family: czsbmjf;
