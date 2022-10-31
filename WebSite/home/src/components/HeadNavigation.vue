@@ -26,7 +26,8 @@ export default {
     position: relative;;
     top: 10px;
     left: 50px;
-}.head_navigation div{
+}
+.head_navigation div{
     display: inline;
     float: right;
     margin-right: 50px;
