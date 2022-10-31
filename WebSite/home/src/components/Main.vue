@@ -1,131 +1,78 @@
-@charset "UTF-8";
-*{
-    margin: 0;
+<template>
+<!--  主内容-->
+<div id="main" class="main">
+        <!-- 左侧用户信息显示栏 -->
+        <div class="left_user_navigation">
+            <img id="head_img">
+            <a id="user_name">长白崎</a>
+            <a id="describe">2022年的理想开始实现了吗？</a>
+            <div class="user_label">
+                <div id="label_paper">
+                    <p id="title">文章</p>
+                    <p id="value">100</p>
+                </div>
+                <div id="label_label">
+                    <p id="title">标签</p>
+                    <p id="value">75</p>
+                </div>
+                <div id="label_class">
+                    <p id="title">分类</p>
+                    <p id="value">19</p>
+                </div>
+            </div>
+            <a class="toQQ" href="http://wpa.qq.com/msgrd?v=3&uin=2084069833&site=qq&menu=yes"></a>
+            <a class="toGitHub" href="https://github.com/Changbaiqi"></a>
+            <a class="toEmil" href=""></a>
+        </div>
+        <!-- 左侧导航栏 -->
+        <div class="left_navigation">
+            <div class="left_navigation_inform">
+                <div>
+                    <img src="../assets/images/通知公告.png" alt="">
+                    <span>通知公告</span>
+                </div>
+                <div class="inform_content">
+                    欢迎各位道友前来互相学习~
+                </div>
+            </div>
+        </div>
+        <!-- 主要内容展示 -->
+        <div class="content">
+            
+            <div style="
+            width: 100%;
+            height: 300px;
+            background-color: aliceblue;
+            border-radius: 10px;
+            ">
+            <div style="
+            width: 45%;
+            height: 100%;
+            border-radius: 10px;
+            margin-left: -1px;
+            ">
+                <img style="
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 0px 0px 10px;"
+                src="../assets/images/89938429686470d440d6fea7fc9e7c81.jpeg">
+            </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+export default {
+
 }
-::-webkit-scrollbar{
-    display: none;
-}
-
-body,html{
-    scroll-behavior: smooth;
-}
-
-body{
-    background-color: black;
-    position: relative;
-    z-index: -1;
-}
-
-@font-face {
-    font-family: czsbmjf;
-    src: url(../ttf/潮字社北冥简繁.ttf);
-}
+</script>
 
 
 
-/* -------主题页------ */
-
-.page{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/1f54c5ab85845cd6c2e29ee5a109605a.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-    filter: blur(0px);
-    animation: page_loading 2s;
-}
-
-@keyframes page_loading {
-    0%{
-        filter: blur(3px);
-    }
-    100%{
-        filter: blur(0px);
-    }
-}
-
-.page #next{
-    height: 200px;
-    width:  100%;
-    position: absolute;
-    top: 80%;
-    /* background-color: aliceblue; */
-}
-
-.page img{
-    content: url(../images/向下.png);
-    height: 35px;
-    width: 35px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    filter: opacity(0.4) drop-shadow(0 0 0 rgba(0, 0, 0, 0.392));
-    animation: fontam 0.6s ease 0s infinite alternate;
-}
-
-.page #text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: inline-block;
-    transform: translate(-50%,-50%);
-    font-size: 50px;
-    color: rgba(239, 240, 242, 0.878);
-    text-shadow: 1px 5px 5px #000;
-    font-family: czsbmjf;
-    text-decoration: none;
-} 
-
-@keyframes fontam {
-    from{
-        position: relative;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        transition-duration: 1s;
-        filter: opacity(0.9) drop-shadow(0 0 0 rgb(0, 0, 0));
-    }  
-    to{
-        position: relative;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        transition-duration: 1s;
-        filter: opacity(0.2) drop-shadow(0 0 0 rgba(27, 27, 27, 0.392));
-    } 
-}
 
 
-/* ---------头部导航栏------------ */
-.head_navigation{
-    height: 50px;
-    /* background-color: rgb(185, 68, 68); */
-    z-index: 1;
-}
-
-.head_navigation a{
-    font-size: 18px;
-    color: rgba(255, 255, 255, 0.748);
-    position: relative;;
-    top: 10px;
-    left: 50px;
-}
-
-.head_navigation div{
-    display: inline;
-    float: right;
-    margin-right: 50px;
-    margin-top: 10px;
-    color: rgba(21, 21, 21, 0.748);
-    font-size: 16px;
-}
-
+<style>
 .main{
     height: auto;
     width: 100%;
@@ -140,9 +87,6 @@ body{
         left: 80px;
     }
 }
-
-
-
 /* ------用户信息导航栏------ */
 .left_user_navigation{
     height: 500px;
@@ -173,7 +117,7 @@ body{
 .left_user_navigation #head_img{
     height: 100px;
     width: 100px;
-    content: url(../images/QQ头像.jpg);
+    content: url(../assets/images/QQ头像.jpg);
     border-radius: 100%;
     position: absolute;
     top: 10%;
@@ -277,7 +221,7 @@ body{
 }
 
 .left_user_navigation .toQQ{
-    background-image: url(../images/qq.png);
+    background-image: url(../assets/images/qq.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -290,7 +234,7 @@ body{
 }
 
 .left_user_navigation .toGitHub{
-    background-image: url(../images/GitHub.png);
+    background-image: url(../assets/images/GitHub.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -304,7 +248,7 @@ body{
 }
 
 .left_user_navigation .toEmil{
-    background-image: url(../images/emil.png);
+    background-image: url(../assets/images/emil.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -389,3 +333,5 @@ body{
     border-radius: 10px;
 }
 
+
+</style>
