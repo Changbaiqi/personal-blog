@@ -1,20 +1,18 @@
-
-   
-
-    const school =  Vue.extend({
-        name: "school",
-        template: `<a>长白崎的博客</a>`,
-        comments:{
+const Student = Vue.extend({
+    template: `
+    <h1>测试成功</h1>
+    <style>
+        .h1{
+            color: red;
         }
-    });
- 
-
-    var app = new Vue({
-        el:'#abcd',
-        comments:{
-           'school':school
-        }
-    });
+    </style>
+    `,
+});
 
 
-
+new Vue({
+    el: '.content',
+    components: {
+        //  Student
+    }
+});
