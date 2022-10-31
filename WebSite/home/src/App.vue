@@ -3,6 +3,7 @@
     <HeadNavigationVue></HeadNavigationVue>
     <Page></Page>
     <Main></Main>
+    <BottomSheet></BottomSheet>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HeadNavigationVue from './components/HeadNavigation.vue';
 import Page from './components/Page.vue';
 import Main from './components/Main.vue';
+import BottomSheet from './components/BottomSheet.vue';
 
 export default {
   name: 'App',
   components: {
     HeadNavigationVue,
     Page,
-    Main
+    Main,
+    BottomSheet
   }
 }
 </script>

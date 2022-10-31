@@ -1,6 +1,6 @@
 <template>
-<!--  主内容-->
-<div id="main" class="main">
+    <!--  主内容-->
+    <div id="main" class="main">
     <!-- 左侧用户信息导航栏 -->
         <LeftUserNavigation></LeftUserNavigation>
         <!-- 左侧导航栏 -->
@@ -21,51 +21,8 @@
             <ContentChild></ContentChild>
             <ContentChild></ContentChild>
             <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild></ContentChild>
         </div>
+        
     </div>
 </template>
 
@@ -77,7 +34,7 @@ export default {
     name: 'Main',
     components:{
         ContentChild,
-        LeftUserNavigation
+        LeftUserNavigation,
     }
 }
 </script>
@@ -87,12 +44,18 @@ export default {
 
 
 <style>
+.mainBody{
+    height: 100%;
+    width: 100%;
+}
+
 .main{
     height: auto;
     width: 100%;
-    margin-top: 100vh;
+    /* margin-top: 100vh; */
     position: relative;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
+    display:flex;
 }
 
 
@@ -108,10 +71,8 @@ export default {
 /* ------左侧导航栏------ */
 .left_navigation{
     height: 500px;
-    width: 16.5%;
-    /* margin-top: 550px; */
-    /* background-color: rgb(21, 20, 20); */
-    position: absolute;
+    width: 17%;
+    position: relative;
     left: 19%;
     top: 550px;
     border-radius: 10px;
@@ -164,9 +125,9 @@ export default {
     max-width: 80%;
     /* background-color: rgb(21, 20, 20); */
     margin-right: 1px;
-    position: absolute;
-    top: 30px;
-    left: 60%;
+    position: relative;
+    left: 45%;
+    top: 32px;
     transform: translate(-50%);
 
     border-radius: 10px;

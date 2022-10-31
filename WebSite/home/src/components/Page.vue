@@ -20,9 +20,9 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: absolute;
+    position: relative;
     top: 0px;
-    z-index: -1;
+    z-index: 1;
     filter: blur(0px);
     animation: page_loading 2s;
 }

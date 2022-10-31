@@ -17,13 +17,15 @@ export default {
 /* ---------头部导航栏------------ */
 .head_navigation{
     height: 50px;
-    z-index: 1;
+    z-index: -1;
+    position: absolute;
+    z-index: 2;
     /* background-color: aliceblue; */
 }
 .head_navigation a{
     font-size: 18px;
     color: rgba(255, 255, 255, 0.748);
-    position: relative;;
+    position: relative;
     top: 10px;
     left: 50px;
 }
