@@ -169,6 +169,19 @@ body{
     text-align: center;
 }
 
+#left_user_navigation{
+    animation: test 1s;
+}
+
+@keyframes test {
+    from{
+        transform: scale(0.2);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
 .left_user_navigation #head_img{
     height: 100px;
     width: 100px;
