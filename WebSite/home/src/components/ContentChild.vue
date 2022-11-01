@@ -1,5 +1,5 @@
 <template>
-  <div :class="exp_class == true ?'contentChild' : 'loading_contentChild'" id="contentChild">
+  <div :class="exp_class == true ?'contentChild' : 'loading_contentChild'" id="contentChild" @click="paperTitle">
     <div id="contentChildImg_Left" v-show="imgIsLeftOrRight">
         <img id="showImg_Left">
     </div>
@@ -55,6 +55,9 @@ export default {
                 this.exp_class = true;
                 window.removeEventListener('scroll',this.handleScroll);
             }
+        },
+        paperTitle(){
+            this.$emit("Test",this);
         }
     }
 }
@@ -112,7 +115,7 @@ export default {
     width: 100%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
-    content: url(../assets/images/89938429686470d440d6fea7fc9e7c81.jpeg);
+    content: url(../assets/images/89938429686470d440d6fea7fc9e7c81.jpg);
     cursor: pointer;
     transform: all 0.6s;    
     /* filter: blur(10px); */
@@ -132,7 +135,7 @@ export default {
     width: 100%;
     height: 100%;
     border-radius: 0px 10px 10px 0px;
-    content: url(../assets/images/89938429686470d440d6fea7fc9e7c81.jpeg);
+    content: url(../assets/images/89938429686470d440d6fea7fc9e7c81.jpg);
     cursor: pointer;
     transform: all 0.6s;    
     /* filter: blur(10px); */
