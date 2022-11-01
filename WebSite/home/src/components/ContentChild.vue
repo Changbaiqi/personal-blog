@@ -116,6 +116,12 @@ export default {
     left: 50px;
     color: aliceblue;
     font-size: 30px;
+    transition-duration: .3s;
+}
+
+#contentChild #right h2:hover{
+    color: rgb(134, 34, 248);
+    transition-duration: .3s;
 }
 
 #contentChild #right div{

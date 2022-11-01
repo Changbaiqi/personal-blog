@@ -1,6 +1,6 @@
 <template>
   <div class="bottomSheet">
-    <p>©2020 - 2022 长白崎</p>
+    <p>©2022 - 2025 长白崎</p>
     <p>网页设计：长白崎|制作：长白崎</p>
     <p>Believe in a better future tomorrow.</p>
   </div>

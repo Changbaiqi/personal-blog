@@ -48,6 +48,10 @@ export default {
     padding: 30px;
 }
 
+.loading_left_navigation_inform{
+    transform: scale(0);
+}
+
 .left_navigation_inform{
     animation: loadingAnimation 1s;
 }
