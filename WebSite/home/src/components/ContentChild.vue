@@ -4,10 +4,9 @@
         <img id="showImg_Left">
     </div>
     <div id="right" >
-            <h2>测试标题</h2>
+            <h2 v-text="title">测试标题</h2>
             <div>发表于2022-06-09|JavaSccript</div>
-            <a id="text">
-                本系列文章旨在带给读者地道的前端基础知识体系，深入底层原理，了解最权威的前端基础，循序渐进，带领读者领略正确学习方法的独特魅力。
+            <a id="text" v-text="textBody">
             </a>
     </div>
     <div id="contentChildImg_Right" v-show="!imgIsLeftOrRight">
@@ -32,6 +31,14 @@ export default {
             //required: true, //是否必须要传
             default: true, //默认值
         },
+        title:{
+            type:String,
+            default: "无"
+        },
+        textBody:{
+            type:String,
+            default:"无"
+        }
     },
     mounted(){
         window.addEventListener('scroll',this.handleScroll);
@@ -53,7 +60,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #contentChild{
     width: 100%;
     height: 300px;

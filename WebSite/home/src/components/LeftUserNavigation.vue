@@ -53,7 +53,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* ------用户信息导航栏------ */
 #left_user_navigation{
     height: 500px;

@@ -9,30 +9,7 @@
         </div>
         <!-- 主要内容展示 -->
         <div class="content">
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
-            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
-            <ContentChild></ContentChild>
+            <ContentChild v-for="index in 10" :imgIsLeftOrRight="index%2!=0? true : false" title="标题" textBody="本系列文章旨在带给读者地道的前端基础知识体系，深入底层原理，了解最权威的前端基础，循序渐进，带领读者领略正确学习方法的独特魅力。"></ContentChild>
         </div>
         
     </div>
@@ -45,6 +22,13 @@ import LeftInform from './LeftInform.vue';
 
 export default {
     name: 'Main',
+    mounted(){
+        this.addChild
+    },
+    methods:{
+        addChild(){
+        }
+    },
     components:{
         ContentChild,
         LeftUserNavigation,

@@ -38,14 +38,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* 通知公告 */
 #left_navigation_inform{
-    width: 80%;
+    width: 97%;
     height: 300px;
     background-color: rgb(21, 20, 20);
     border-radius: 10px;
-    padding: 30px;
+    overflow: hidden;
 }
 
 .loading_left_navigation_inform{
@@ -69,22 +69,33 @@ export default {
 #left_navigation_inform div img{
     height: 30px;
     width: 30px;
+    position: relative;
+    top: 30px;
+    left: 30px;
 }
 
 #left_navigation_inform div span{
     height: 100%;
+    width: 100%;
     margin-left: 10px;
     font-size: 18px;
     color: aliceblue;
     position: relative;
-    bottom: 5px;
+    top: 30px; bottom: 5px;
+    left: 30px;
+    font-family: hyhg;
 }
 
 #left_navigation_inform .inform_content{
-    position: relative;
-    top: 10px;
     color: aliceblue;
     text-indent: 2em;
+    position: relative;
+    top: 40px; bottom: 30px;
+    font-family: hyhg;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    word-break: break-all;
 }
 
 </style>

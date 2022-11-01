@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import $ from 'jquery';
 
 export default {
