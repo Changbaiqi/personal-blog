@@ -1,14 +1,17 @@
 <template>
   <div :class="exp_class == true ?'contentChild' : 'loading_contentChild'" id="contentChild">
-    <div id="contentChildImg">
-        <img id="showImg">
+    <div id="contentChildImg_Left" v-show="imgIsLeftOrRight">
+        <img id="showImg_Left">
     </div>
-    <div id="right">
+    <div id="right" >
             <h2>测试标题</h2>
             <div>发表于2022-06-09|JavaSccript</div>
             <a id="text">
                 本系列文章旨在带给读者地道的前端基础知识体系，深入底层原理，了解最权威的前端基础，循序渐进，带领读者领略正确学习方法的独特魅力。
             </a>
+    </div>
+    <div id="contentChildImg_Right" v-show="!imgIsLeftOrRight">
+        <img id="showImg_Right">
     </div>
    </div>
 </template>
@@ -21,6 +24,7 @@ export default {
     data(){
         return{
             exp_class: false,
+            imgIsLeftOrRight: true,
         }
     },
     mounted(){
@@ -84,17 +88,37 @@ export default {
 
 
 
-#contentChildImg{
+#contentChildImg_Left{
     width: 45%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
     overflow: hidden;
     position: relative;
 }
-#showImg{
+#showImg_Left{
     width: 100%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
+    content: url(../assets/images/89938429686470d440d6fea7fc9e7c81.jpeg);
+    cursor: pointer;
+    transform: all 0.6s;    
+    /* filter: blur(10px); */
+    filter: opacity(0.7);
+    transition-duration: 1s;
+    
+}
+
+#contentChildImg_Right{
+    width: 45%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+    position: relative;
+}
+#showImg_Right{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
     content: url(../assets/images/89938429686470d440d6fea7fc9e7c81.jpeg);
     cursor: pointer;
     transform: all 0.6s;    

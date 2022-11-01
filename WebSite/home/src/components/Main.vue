@@ -9,7 +9,7 @@
         </div>
         <!-- 主要内容展示 -->
         <div class="content">
-            <ContentChild></ContentChild>
+            <ContentChild imgIsLeftOrRight="false"></ContentChild>
             <ContentChild></ContentChild>
             <ContentChild></ContentChild>
             <ContentChild></ContentChild>
