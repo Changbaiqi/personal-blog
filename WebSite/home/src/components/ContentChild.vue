@@ -24,9 +24,10 @@ export default {
     data(){
         return{
             exp_class: false,
-            imgIsLeftOrRight: true,
+            imgIsLeftOrRight: false,
         }
     },
+    props:['imgIsLeftOrRight'],
     mounted(){
         window.addEventListener('scroll',this.handleScroll);
     },

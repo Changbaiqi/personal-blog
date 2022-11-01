@@ -9,9 +9,29 @@
         </div>
         <!-- 主要内容展示 -->
         <div class="content">
-            <ContentChild imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
             <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
             <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
+            <ContentChild></ContentChild>
+            <ContentChild :imgIsLeftOrRight="false"></ContentChild>
             <ContentChild></ContentChild>
         </div>
         
