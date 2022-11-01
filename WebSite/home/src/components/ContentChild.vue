@@ -24,10 +24,15 @@ export default {
     data(){
         return{
             exp_class: false,
-            imgIsLeftOrRight: false,
         }
     },
-    props:['imgIsLeftOrRight'],
+    props:{
+        imgIsLeftOrRight: {
+            type: Boolean, //所传类型核查定义
+            //required: true, //是否必须要传
+            default: true, //默认值
+        },
+    },
     mounted(){
         window.addEventListener('scroll',this.handleScroll);
     },
