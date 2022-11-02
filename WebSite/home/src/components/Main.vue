@@ -74,7 +74,7 @@ export default {
     height: 500px;
     width: 17%;
     position: relative;
-    left: 19%;
+    left: 18%;
     top: 550px;
     border-radius: 10px;
 }
@@ -86,13 +86,13 @@ export default {
     /* height: 100vh; */
     min-height: 100vh;
     max-height: auto;
-    width: 47%;
+    width: 46%;
     min-width: 200px;
     max-width: 80%;
     /* background-color: rgb(21, 20, 20); */
     margin-right: 1px;
     position: relative;
-    left: 45%;
+    left: 42%;
     top: 32px;
     transform: translate(-50%);
 

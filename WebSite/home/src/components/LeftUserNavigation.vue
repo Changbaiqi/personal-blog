@@ -62,7 +62,7 @@ export default {
     margin-top: 30px;
     border-radius: 10px;
     position:absolute;
-    left: 19%;
+    left: 18%;
     text-align: center;
 }
 

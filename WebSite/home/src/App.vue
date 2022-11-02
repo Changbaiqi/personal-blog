@@ -36,11 +36,23 @@ export default {
 }
 body,html{
   scroll-behavior: smooth;
+
+}
+html{
+  overflow: -moz-hidden-unscrollable;
+  height: 100%;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 body{
   background-color: black;
   position: relative;
   z-index: -1;
+  width: calc(100vw+18px);
+  height: 100%;
+  -ms-overflow-style: none;
+  overflow: auto;
 }
 @font-face {
     font-family: czsbmjf;
