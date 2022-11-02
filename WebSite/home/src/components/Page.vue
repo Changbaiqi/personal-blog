@@ -24,7 +24,7 @@ export default {
     top: 0px;
     z-index: 1;
     filter: blur(0px);
-    animation: page_loading 2s;
+    animation: page_loading 3s;
 }
 @keyframes page_loading {
     0%{
@@ -63,7 +63,7 @@ export default {
     font-size: 60px;
     color: rgba(239, 240, 242, 0.878);
     text-shadow: 1px 5px 5px #000;
-    font-family: czsbmjf;
+    font-family: hyhg;
     text-decoration: none;
 } 
 
