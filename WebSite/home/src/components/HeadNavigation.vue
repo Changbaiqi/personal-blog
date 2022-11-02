@@ -8,9 +8,9 @@
                 <li style="text-align: center;">选项三</li>
             </ul>
         </div>
-        <div id="board"><img><span>留言板</span></div>
-        <div id="home"><img><span>首页</span></div>
-        <div id="search"><img><span>搜索</span></div>
+        <a id="board"><img><span>留言板</span></a>
+        <a id="home"><img><span>首页</span></a>
+        <a id="search"><img><span>搜索</span></a>
   </div>
 </template>
 
@@ -54,13 +54,13 @@ export default {
     float: right;
     position: relative;
     top: 10px;
-    right: 10px;
+    margin-right: 50px;
     cursor: url('../assets/images/favicon.ico'),default;
 }
 .head_navigation #search::before{
     content: "";
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%);
     border-bottom:5px solid #9a7bd4;
@@ -85,6 +85,8 @@ export default {
     color: #c6c5cd;
     margin-left: 10px;
     position: absolute;
+    top: 5px;
+    font-size: 17px;
 }
 
 /* 首页 */
@@ -93,12 +95,13 @@ export default {
     float: right;
     position: relative;
     top: 10px;
+    margin-right: 50px;
     cursor: url('../assets/images/favicon.ico'),default;
 }
 .head_navigation #home::before{
     content: "";
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%);
     border-bottom:5px solid #9a7bd4;
@@ -123,19 +126,23 @@ export default {
     color: #c6c5cd;
     margin-left: 10px;
     position: absolute;
+    top: 5px;
+    font-size: 17px;
 }
 /* 留言板 */
 .head_navigation #board{
     width: 80px;
+    height: 70px;
     float: right;
     position: relative;
     top: 10px;
+    margin-right: 100px;
     cursor: url('../assets/images/favicon.ico'),default;
 }
 .head_navigation #board::before{
     content: "";
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%);
     border-bottom:5px solid #9a7bd4;
@@ -160,7 +167,10 @@ export default {
     color: #c6c5cd;
     margin-left: 10px;
     position: absolute;
+    top: 5px;
+    font-size: 17px;
 }
+
 
 /* 其他 */
 .head_navigation #else{
