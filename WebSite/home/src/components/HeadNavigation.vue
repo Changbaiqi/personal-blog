@@ -228,6 +228,8 @@ export default {
     visibility: hidden;
     filter: opacity(0);
     transition-duration: .3s;
+    display: inline-block;
+    letter-spacing: normal;
 }
 .head_navigation #else:hover ul{
     visibility: visible;
@@ -241,7 +243,6 @@ export default {
 .head_navigation #else ul li{
     color: #c4c4c4;
     width: 140%;
-    height: calc(33%);
     line-height: 50px;
     justify-items: center;
     /* background-color: #712929; */
