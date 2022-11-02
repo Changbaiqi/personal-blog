@@ -36,7 +36,7 @@ export default {
 }
 body,html{
   scroll-behavior: smooth;
-
+  cursor: url(./assets/images/favicon.ico),default;
 }
 html{
   overflow: -moz-hidden-unscrollable;
