@@ -35,6 +35,7 @@ export default {
     },
     mounted(){
         window.addEventListener('scroll',this.handleScroll);
+        scroll(0,1.2);
     },
     destroyed(){
         window.removeEventListener('scroll',this.handleScroll);
@@ -44,7 +45,7 @@ export default {
             var exp_height = $('.loading_left_user_navigation').offset().top;
             var clientheight = document.documentElement.clientHeight;
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-            if(clientheight+scrollTop > exp_height+200) {
+            if(clientheight+scrollTop >= exp_height+200) {
                 this.exp_class = true;
                 window.removeEventListener('scroll',this.handleScroll);
             }

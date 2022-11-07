@@ -54,10 +54,10 @@ body{
   -ms-overflow-style: none;
   overflow: auto;
 }
-@font-face {
+/* @font-face {
     font-family: czsbmjf;
     src: url(./assets/ttf/潮字社北冥简繁.ttf);
-}
+} */
 
 @font-face {
   font-family: hyhg;
