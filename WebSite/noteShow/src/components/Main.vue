@@ -22,6 +22,7 @@ import LeftInform from './LeftInform.vue';
 import { marked } from 'marked';
 import hljs from 'highlight.js';
 import "highlight.js/styles/monokai-sublime.css"; // 引入高亮样式 这里我用的是sublime样式
+import 'animate.css'
 
 export default {
     name: 'Main',
