@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* ---------头部导航栏------------ */
 .head_navigation{
     height: 50px;

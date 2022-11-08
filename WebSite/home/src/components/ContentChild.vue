@@ -75,6 +75,7 @@ export default {
     display: flex;
     position: relative;
     font-family: hyhg;
+    overflow: hidden;
 }
 /* 首次出现的动画 */
 .loading_contentChild{
