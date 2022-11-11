@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 /* ---------头部导航栏------------ */
 .head_navigation{
     height: 50px;
@@ -174,7 +174,7 @@ export default {
 
 /* 其他 */
 .head_navigation #else{
-    width: 80px;
+    width: 120px;
     float: right;
     position: relative;
     top: 10px;
@@ -186,7 +186,7 @@ export default {
     top: 20px;
     left: 50%;
     transform: translate(-50%);
-    border-bottom:5px solid #9a7bd4;
+    border-bottom:3px solid #9a7bd4;
     width: 0;
     height: 5px;
     transition: 0.2s all linear;
@@ -208,6 +208,8 @@ export default {
     color: #c6c5cd;
     margin-left: 10px;
     position: absolute;
+    top: -3px;
+    font-size: 17px;
 }
 .head_navigation #else span::after{
     /* height: 20px;
@@ -215,7 +217,7 @@ export default {
     content: '';
     position: absolute;
     top: 5px;
-    left: 35px;
+    left: 40px;
     height: 20px;
     width: 20px;
     background: url(../assets/images/向下\ \(1\).png) no-repeat;
@@ -229,11 +231,14 @@ export default {
 }
 .head_navigation #else ul{
     height: 150px;
-    width: 100px;
+    width: 100%;
     background-color: #000000;
     position: absolute;
-    top: 50px;
+    top: 40px;
     right: 5px;
+    overflow: hidden;
+    
+    box-sizing: border-box;
     box-shadow: 0px 0px 10px 0px #1c1c1c;
     visibility: hidden;
     filter: opacity(0);
@@ -254,11 +259,10 @@ export default {
     color: #c4c4c4;
     width: 140%;
     line-height: 50px;
-    justify-items: center;
     /* background-color: #712929; */
     list-style-type: none;
     position: relative;
-    left: -40px;
+    left: -20px;
 }
 .head_navigation #else ul li:hover{
     background-color: #a7a7a744;

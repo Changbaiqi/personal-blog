@@ -1,8 +1,14 @@
 import Vue from 'vue';
 import App from './App.vue';
 import hljs from 'highlight.js';
+import Vuex from 'vuex';
+
+//使用插件
+Vue.use(Vuex)
+
 Vue.use(hljs);
 Vue.config.productionTip = false
+
 
 
 new Vue({
