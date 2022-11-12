@@ -34,7 +34,8 @@ export default {
   padding: 0px;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: hyhg;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

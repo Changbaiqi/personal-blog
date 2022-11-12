@@ -1,28 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeadNavigation></HeadNavigation>
+    <Main></Main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeadNavigation from './components/HeadNavigation.vue';
+import Main from './components/Main.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeadNavigation,
+    Main
   }
 }
 </script>
 
 <style>
+/* 消除默认样式 */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: hyhg;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+}
+
+body {
+  background-color: black;
+  position: relative;
+  z-index: -1;
+  -ms-overflow-style: none;
+  overflow: auto;
+}
+
+@font-face {
+  font-family: hyhg;
+  src: url(./assets/font/汉仪花冠.ttf);
 }
 </style>

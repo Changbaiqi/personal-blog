@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <HeadNavigationVue></HeadNavigationVue>
-    <Page></Page>
+    <div class="loadingshow">
+      <HeadNavigationVue></HeadNavigationVue>
+      <Page></Page>
+    </div>
     <Main></Main>
     <BottomSheet></BottomSheet>
   </div>
@@ -25,27 +27,38 @@ export default {
 </script>
 
 <style>
-*{
-  margin: 0;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: hyhg;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-body,html{
+
+body,
+html {
   scroll-behavior: smooth;
-  cursor: url(./assets/images/favicon.ico),default;
+  cursor: url(./assets/images/favicon.ico), default;
 }
-html{
+
+html {
   overflow: -moz-hidden-unscrollable;
   height: 100%;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   display: none;
 }
-body{
+
+body {
   background-color: black;
   position: relative;
   z-index: -1;
@@ -54,6 +67,7 @@ body{
   -ms-overflow-style: none;
   overflow: auto;
 }
+
 /* @font-face {
     font-family: czsbmjf;
     src: url(./assets/ttf/潮字社北冥简繁.ttf);
@@ -62,5 +76,18 @@ body{
 @font-face {
   font-family: hyhg;
   src: url(./assets/ttf/汉仪花冠.ttf);
+}
+
+
+.loadingshow{
+  animation: loadingtop 3s;
+}
+@keyframes loadingtop {
+  0%{
+    filter: blur(5px);
+  }
+  100%{
+    filter: blur(0px);
+  }
 }
 </style>

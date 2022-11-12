@@ -23,17 +23,8 @@ export default {
     position: relative;
     top: 0px;
     z-index: 1;
-    filter: blur(0px);
-    animation: page_loading 3s;
 }
-@keyframes page_loading {
-    0%{
-        filter: blur(3px);
-    }
-    100%{
-        filter: blur(0px);
-    }
-}
+
 .page #next{
     height: 200px;
     width:  100%;

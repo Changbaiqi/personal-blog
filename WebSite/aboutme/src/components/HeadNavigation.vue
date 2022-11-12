@@ -8,6 +8,7 @@
                 <li style="text-align: center;">选项三</li>
             </ul>
         </div>
+        <a id="aboutme"><img><span>关于</span></a>
         <a id="board"><img><span>留言板</span></a>
         <a id="home"><img><span>首页</span></a>
         <a id="search"><img><span>搜索</span></a>
@@ -25,6 +26,7 @@ export default {
 .head_navigation{
     height: 50px;
     width: 100%;
+    min-width: 1150px;
     z-index: -1;
     position: absolute;
     z-index: 2;
@@ -136,7 +138,7 @@ export default {
     float: right;
     position: relative;
     top: 10px;
-    margin-right: 100px;
+    margin-right: 50px;
     cursor: url('../assets/images/favicon.ico'),default;
 }
 .head_navigation #board::before{
@@ -171,6 +173,47 @@ export default {
     font-size: 17px;
 }
 
+/* 关于 */
+.head_navigation #aboutme{
+    width: 65px;
+    height: 70px;
+    float: right;
+    position: relative;
+    top: 10px;
+    margin-right: 100px;
+    cursor: url('../assets/images/favicon.ico'),default;
+}
+
+.head_navigation #aboutme::before{
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom:3px solid #9a7bd4;
+    width: 0;
+    height: 5px;
+    transition: 0.2s all linear;
+}
+.head_navigation #aboutme:hover::before{
+    width: 100%;
+    transition: 0.2s all linear;
+}
+
+.head_navigation #aboutme img{
+    content: url(../assets/images/首页.png);
+    
+    filter: drop-shadow(0px 0 0 rgb(255, 255, 255));
+    width: 16px;
+    height: 16px;
+}
+.head_navigation #aboutme span{
+    color: #c6c5cd;
+    margin-left: 10px;
+    position: absolute;
+    top: 5px;
+    font-size: 17px;
+}
 
 /* 其他 */
 .head_navigation #else{
@@ -262,7 +305,7 @@ export default {
     /* background-color: #712929; */
     list-style-type: none;
     position: relative;
-    left: 0px;
+    /* left: -40px; */
 }
 .head_navigation #else ul li:hover{
     background-color: #a7a7a744;
