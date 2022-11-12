@@ -31,6 +31,16 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+html {
+  overflow: -moz-hidden-unscrollable;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 #login{
   margin: 0 auto;
   position: absolute;

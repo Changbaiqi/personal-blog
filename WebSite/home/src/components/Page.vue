@@ -15,6 +15,7 @@ export default {
 .page{
     height: 100vh;
     width: 100%;
+    min-width: 1150px;
     background-image: url(../assets/images/1f54c5ab85845cd6c2e29ee5a109605a.webp);
     background-position: center;
     background-repeat: no-repeat;

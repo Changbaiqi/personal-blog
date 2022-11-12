@@ -2,7 +2,7 @@
     <!--  主内容-->
     <div id="main" class="main">
     <!-- 左侧用户信息导航栏 -->
-        <LeftUserNavigation></LeftUserNavigation>
+        <LeftUserNavigation class="left_userNavigation"></LeftUserNavigation>
         <!-- 左侧导航栏 -->
         <div class="left_navigation">
             <LeftInform></LeftInform>
@@ -52,9 +52,12 @@ export default {
 
 .main{
     height: auto;
-    width: 100%;
+    min-width: 1150px;
+    max-width: 1150px;
     /* margin-top: 100vh; */
     position: relative;
+    left: 50%;
+    transform: translate(-50%);
     /* background-color: aliceblue; */
     display:flex;
 }
@@ -66,16 +69,19 @@ export default {
     }
 }
 
-
+.left_userNavigation{
+    position: relative;
+    left: 10px;
+}
 
 
 /* ------左侧导航栏------ */
 .left_navigation{
     height: 500px;
-    width: 17%;
+    width: 300px;
     position: relative;
-    left: 18%;
     top: 550px;
+    left: 10px;
     border-radius: 10px;
 }
 
@@ -86,13 +92,13 @@ export default {
     /* height: 100vh; */
     min-height: 100vh;
     max-height: auto;
-    width: 46%;
+    width: 800px;
     min-width: 200px;
     max-width: 80%;
     /* background-color: rgb(21, 20, 20); */
     margin-right: 1px;
     position: relative;
-    left: 42%;
+    left: 38%;
     top: 32px;
     transform: translate(-50%);
 

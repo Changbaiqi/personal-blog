@@ -41,8 +41,8 @@ export default {
 <style scoped>
 /* 通知公告 */
 #left_navigation_inform{
-    width: 97%;
-    height: 300px;
+    width: 300px;
+    min-height: 300px;
     background-color: rgb(21, 20, 20);
     border-radius: 10px;
     overflow: hidden;

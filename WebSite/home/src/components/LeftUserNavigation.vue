@@ -57,12 +57,11 @@ export default {
 /* ------用户信息导航栏------ */
 #left_user_navigation{
     height: 500px;
-    width: 16.5%;
+    width: 300px;
     background-color: rgb(21, 20, 20);
     margin-top: 30px;
     border-radius: 10px;
     position:absolute;
-    left: 18%;
     text-align: center;
 }
 

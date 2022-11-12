@@ -26,6 +26,7 @@ export default {
 .head_navigation{
     height: 50px;
     width: 100%;
+    min-width: 1150px;
     z-index: -1;
     position: absolute;
     z-index: 2;
@@ -158,11 +159,11 @@ export default {
 
 
 .head_navigation #board img{
-    content: url(../assets/images/首页.png);
+    content: url(../assets/images/留言.svg);
     
     filter: drop-shadow(0px 0 0 rgb(255, 255, 255));
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
 }
 .head_navigation #board span{
     color: #c6c5cd;
@@ -200,11 +201,11 @@ export default {
 }
 
 .head_navigation #aboutme img{
-    content: url(../assets/images/首页.png);
+    content: url(../assets/images/喜爱.svg);
     
     filter: drop-shadow(0px 0 0 rgb(255, 255, 255));
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
 }
 .head_navigation #aboutme span{
     color: #c6c5cd;
@@ -219,7 +220,7 @@ export default {
     width: 80px;
     float: right;
     position: relative;
-    top: 10px;
+    top: 8px;
     cursor: url('../assets/images/favicon.ico'),default;
 }
 .head_navigation #else::before{
@@ -240,7 +241,7 @@ export default {
 
 
 .head_navigation #else img{
-    content: url(../assets/images/首页.png);
+    content: url(../assets/images/杯子.svg);
     
     filter: drop-shadow(0px 0 0 rgb(255, 255, 255));
     width: 16px;
@@ -276,7 +277,7 @@ export default {
     width: 130px;
     background-color: #000000;
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 5px;
     overflow: hidden;
     
