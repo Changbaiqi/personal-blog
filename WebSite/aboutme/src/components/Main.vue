@@ -53,7 +53,9 @@ export default {
 }
 #stackTechnologyNavigation{
     /* display: block; */
+    margin-top: -70px;
 }
+
 
 /* 
 @media screen and (max-width: 1790px){

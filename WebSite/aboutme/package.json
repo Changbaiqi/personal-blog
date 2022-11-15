@@ -9,7 +9,11 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^2.6.14"
+    "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.6.0",
+    "text-loader": "^0.0.1",
+    "vue": "^2.6.14",
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

@@ -13,13 +13,17 @@ import HeadNavigation from './components/HeadNavigation.vue';
 import Main from './components/Main.vue';
 import Page from './components/Page.vue';
 
+// import hljs from 'highlight.js';
+
+
+
 export default {
   name: 'App',
   components: {
     HeadNavigation,
     Page,
     Main
-  }
+  },
 }
 </script>
 
@@ -60,15 +64,17 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.head{
+.head {
   height: 40vh;
   position: relative;
   overflow: hidden;
 }
-.head #page{
+
+.head #page {
   position: absolute;
 }
-.head #headNavigation{
+
+.head #headNavigation {
   position: absolute;
 }
 
