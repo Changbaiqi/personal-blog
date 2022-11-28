@@ -30,7 +30,7 @@ export default {
     height: 200px;
     width:  100%;
     position: absolute;
-    top: 80%;
+    bottom: -20px;
     /* background-color: aliceblue; */
 }
 
