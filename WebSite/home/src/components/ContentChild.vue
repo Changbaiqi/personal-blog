@@ -50,7 +50,10 @@ export default {
         handleScroll() {
             var exp_height = $('.loading_contentChild').offset().top;
             var clientheight = document.documentElement.clientHeight;
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+            var scrollTop = window.pageYOffset || 
+            document.documentElement.scrollTop || 
+            document.body.scrollTop;
+            
             if(clientheight+scrollTop > exp_height+200) {
                 this.exp_class = true;
                 window.removeEventListener('scroll',this.handleScroll);
