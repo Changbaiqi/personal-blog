@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 /* ---------头部导航栏------------ */
 .head_navigation{
     height: 50px;
@@ -272,6 +272,7 @@ export default {
     transition-duration: .5s;
     transform-origin: 40% 35%;
 }
+
 .head_navigation #else ul{
     height: 150px;
     width: 130px;
@@ -289,6 +290,7 @@ export default {
     display: inline-block;
     letter-spacing: normal;
 }
+
 .head_navigation #else:hover ul{
     visibility: visible;
     filter: opacity(1);
@@ -298,6 +300,7 @@ export default {
     transition-duration: .3s;
     list-style-type: none;
 }
+
 .head_navigation #else ul li{
     color: #c4c4c4;
     width: 130px;
