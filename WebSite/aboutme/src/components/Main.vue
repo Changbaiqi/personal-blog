@@ -1,10 +1,16 @@
 <template>
     <div class="main">
         <div id="head">
-            <UserNavigation id="userNavigation"></UserNavigation>
-            <ContactNavigation id="contactNavigation"></ContactNavigation>
+            <transition name="userNav" appear>
+                <UserNavigation id="userNavigation"></UserNavigation>
+            </transition>
+            <transition name="contactNav" appear>
+                <ContactNavigation id="contactNavigation"></ContactNavigation>
+            </transition>
         </div>
-        <StackTechnologyNavigation id="stackTechnologyNavigation"></StackTechnologyNavigation>
+        <transition name="stackTechnologyNav" appear>
+            <StackTechnologyNavigation id="stackTechnologyNavigation"></StackTechnologyNavigation>
+        </transition>
     </div>
 </template>
 
@@ -15,7 +21,7 @@ import StackTechnologyNavigation from './StackTechnologyNavigation.vue';
 
 export default {
     name: 'Main',
-    components:{
+    components: {
         UserNavigation,
         ContactNavigation,
         StackTechnologyNavigation
@@ -24,8 +30,8 @@ export default {
 </script>
 
 <style scoped>
-.main{
-    height: 100vh;
+.main {
+    min-height: 30vh;
     width: 1100px;
     min-width: 1100px;
 
@@ -35,33 +41,78 @@ export default {
     top: 50px;
 }
 
-#head{
+.userNav-enter-active {
+    animation: userNavEnter 1s;
+}
+
+.contactNav-enter-active {
+    animation: contactNavEnter 1s;
+}
+
+.stackTechnologyNav-enter-active{
+    animation: stackTechnologyNavEnter 1s;
+}
+
+@keyframes userNavEnter {
+    from {
+        position: relative;
+        right: 30px;
+        opacity: 0.3;
+    }
+
+    to {
+        position: relative;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes contactNavEnter {
+    from {
+        position: relative;
+        left: 30px;
+        opacity: 0.3;
+    }
+
+    to {
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes stackTechnologyNavEnter {
+    from{
+        position: relative;
+        top: 30px;
+        opacity: 0.3;
+    }
+    to{
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+#head {
     height: 300px;
     /* width: 100%;
     background-color: aqua; */
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     overflow: hidden;
 }
 
-#head #userNavigation{
+#head #userNavigation {
     margin-top: 10px;
 }
 
-#head #contactNavigation{
+#head #contactNavigation {
     margin-top: 10px;
 }
-#stackTechnologyNavigation{
+
+#stackTechnologyNavigation {
     /* display: block; */
     margin-top: -70px;
 }
-
-
-/* 
-@media screen and (max-width: 1790px){
-    #head{
-        display: block;
-    }
-} */
-
 </style>

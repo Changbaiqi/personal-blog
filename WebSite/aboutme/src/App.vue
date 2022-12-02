@@ -4,7 +4,10 @@
       <Page id="page"></Page>
       <HeadNavigation id="headNavigation"></HeadNavigation>
     </div>
-    <Main id="main"></Main>
+    <div class="midd">
+      <Main id="main"></Main>
+    </div>
+    <BottomSheet></BottomSheet>
   </div>
 </template>
 
@@ -12,7 +15,7 @@
 import HeadNavigation from './components/HeadNavigation.vue';
 import Main from './components/Main.vue';
 import Page from './components/Page.vue';
-
+import BottomSheet from './components/BottomSheet.vue';
 // import hljs from 'highlight.js';
 
 
@@ -22,7 +25,8 @@ export default {
   components: {
     HeadNavigation,
     Page,
-    Main
+    Main,
+    BottomSheet
   },
 }
 </script>
@@ -41,10 +45,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
   color: #2c3e50;
-  /* margin-top: 60px; */
-  /* position: relative; */
 }
 
 body {
@@ -75,7 +76,12 @@ body::-webkit-scrollbar {
 }
 
 .head #headNavigation {
-  position: absolute;
+  position: relative;
+}
+
+.midd{
+
+  /* overflow: hidden; */
 }
 
 

@@ -55,7 +55,8 @@ export default {
 
 <style scoped>
 .stackTechnologyNavigation {
-    min-height: 50vh;
+    /* min-height: 50vh;
+    max-height: 100%; */
     width: 94%;
     background-color: #151414;
     border-radius: 15px;

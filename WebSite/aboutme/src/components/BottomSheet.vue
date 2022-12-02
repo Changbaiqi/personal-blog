@@ -7,7 +7,7 @@
 </template>
 
 <script scoped>
-import $ from 'jquery';
+// import $ from 'jquery';
 
 export default {
     name:"ButtomSheet",

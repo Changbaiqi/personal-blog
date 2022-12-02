@@ -65,7 +65,7 @@ export default {
 
 
 
-<style>
+<style scoped>
 .mainBody {
     height: 100%;
     width: 100%;
